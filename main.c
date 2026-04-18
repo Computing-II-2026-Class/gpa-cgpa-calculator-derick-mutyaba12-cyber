@@ -6,7 +6,7 @@ Registration Number: 25/U/BIE/01399/PE
 #include <stdio.h>
 
 int main(void) {
-        /* Declare variables*/
+        /* Variables*/
     // Semester I course details
     const char *sem1_codes[] = {
         "TEMB1101", "TEMB1102", "TEMB1103", "TEMB1104",
@@ -50,14 +50,24 @@ int main(void) {
     for (int i = 0; i < 8; i++) {
         printf("Enter score for %s - %s (%d credits): ", 
                sem1_codes[i], sem1_names[i], sem1_credits[i]);
-        scanf("%d", &scores[i]);
+         if (scanf("%d", &scores[i]) != 1){
+            printf("Invalid score entered\n");
+            return 1;
     }
+ int c;
+while ((c = getchar()) != '\n' && c != EOF);
+}
 
     printf("\n=== SEMESTER II ===\n");
     for (int i = 0; i < 8; i++) {
         printf("Enter score for %s - %s (%d credits): ", 
                sem2_codes[i], sem2_names[i], sem2_credits[i]);
-        scanf("%d", &scores[8 + i]);
+    if (scanf("%d", &scores[8 + i]) != 1){
+       printf("Invalid score entered\n");
+       return 1;
+    }
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
     }
 
     /* Validate input */
