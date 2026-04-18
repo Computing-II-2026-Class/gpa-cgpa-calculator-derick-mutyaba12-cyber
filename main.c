@@ -106,10 +106,10 @@ while ((c = getchar()) != '\n' && c != EOF);
                 grade_point = 2.0;
                 grade_letter = 'C';
         } else if (score >= 50){
-                grade_point = 0.0;
+                grade_point = 1.0;
                 grade_letter = 'D';
         } else {
-                grade_point = o.o;
+                grade_point = 0.0;
                 grade_letter = 'F';
         }
 
@@ -151,10 +151,10 @@ while ((c = getchar()) != '\n' && c != EOF);
                 grade_point = 2.0;
                 grade_letter = 'C';
         } else if (score >= 50){
-                grade_point = 0.0;
+                grade_point = 1.0;
                 grade_letter = 'D';
         } else {
-                grade_point = o.o;
+                grade_point = 0.0;
                 grade_letter = 'F';
         }
 
