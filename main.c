@@ -6,7 +6,7 @@ Registration Number: 25/U/BIE/01399/PE
 #include <stdio.h>
 
 int main(void) {
-        /* Variables */
+        /* Declare variables*/
     // Semester I course details
     const char *sem1_codes[] = {
         "TEMB1101", "TEMB1102", "TEMB1103", "TEMB1104",
