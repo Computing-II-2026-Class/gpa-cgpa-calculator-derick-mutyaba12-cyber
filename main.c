@@ -95,28 +95,22 @@ while ((c = getchar()) != '\n' && c != EOF);
         double grade_point;
         char grade_letter;
 
-        // Grade conversion using switch
-        switch (score / 10) {
-            case 10: case 9: case 8:
-                grade_point = 5.0;
-                grade_letter = 'A';
-                break;
-            case 7:
+        // Grade conversion 
+        if (score >= 80){
                 grade_point = 4.0;
-                grade_letter = 'B';
-                break;
-            case 6:
+                grade_letter = 'A';
+        } else if (score >= 70){
                 grade_point = 3.0;
-                grade_letter = 'C';
-                break;
-            case 5:
+                grade_letter = 'B';
+        } else if (score >= 60){
                 grade_point = 2.0;
-                grade_letter = 'D';
-                break;
-            default:
+                grade_letter = 'C';
+        } else if (score >= 50){
                 grade_point = 0.0;
+                grade_letter = 'D';
+        } else {
+                grade_point = o.o;
                 grade_letter = 'F';
-                break;
         }
 
         double weighted = grade_point * sem1_credits[i];
@@ -147,27 +141,21 @@ while ((c = getchar()) != '\n' && c != EOF);
         double grade_point;
         char grade_letter;
 
-        switch (score / 10) {
-            case 10: case 9: case 8:
-                grade_point = 5.0;
-                grade_letter = 'A';
-                break;
-            case 7:
+        if (score >= 80){
                 grade_point = 4.0;
-                grade_letter = 'B';
-                break;
-            case 6:
+                grade_letter = 'A';
+        } else if (score >= 70){
                 grade_point = 3.0;
-                grade_letter = 'C';
-                break;
-            case 5:
+                grade_letter = 'B';
+        } else if (score >= 60){
                 grade_point = 2.0;
-                grade_letter = 'D';
-                break;
-            default:
+                grade_letter = 'C';
+        } else if (score >= 50){
                 grade_point = 0.0;
+                grade_letter = 'D';
+        } else {
+                grade_point = o.o;
                 grade_letter = 'F';
-                break;
         }
 
         double weighted = grade_point * sem2_credits[i];
